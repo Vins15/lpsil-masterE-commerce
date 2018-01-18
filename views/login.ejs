@@ -1,0 +1,22 @@
+<% var title = 'Formulaire login' %>
+<% include head%>
+<!DOCTYPE HTML>
+	<meta charset="utf-8">
+
+<h1>Login</h1>	
+<form method="post" action="/login">
+  <p>
+    <label>Email:</label>
+    <input type="text" id ="email" name="email" placeholder ="Email" class="span12"/>
+	<a class="reset-password" href="#">Forgot your password?</a>
+  </p>
+  <p >
+    <label>Password:</label>
+    <input type="password" id="password" placeholder= "Password" name="password" class="span12">
+  </p>
+  <div class= "form-actions">
+    <button type="submit" class="btn btn-sucess">Sign in</button>
+	<div class= "clearfix"></div>
+  </div>
+</form>
+

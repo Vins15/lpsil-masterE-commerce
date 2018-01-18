@@ -1,0 +1,55 @@
+<% var title = 'Formulaire Article' %>
+<% include head%>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<h1> Le choix des articles</h1>
+<section class ="insert">
+	<h3>Insert Article</h3>
+	<form action="/insert" method="post">
+	<div class="panel-body">
+		<label form="title">Title</label>
+		<input type="text" class="form-control" id="title" name="title">
+	</div>
+	<div class="panel-body">
+		<label form="title">Price</label>
+		<input type="text" class="form-control" id="price" name="price">
+	</div>
+	<button type="submit" class="btn btn-primary">INSERT</button>
+<section class="get">	
+	<h3>Get Article</h3>
+	<div class="panel-body">
+	<a href="/get-data">LOAD ARTICLE</a>
+		<article>
+			
+		</article>
+
+	</div>
+<section class="update">
+	<h3>Update Article</h3>
+	<form action="/update" method="post">
+	<div class="panel-body">
+		<label form="id">ID</label>
+		<input type="text" class="form-control" id="id" name="id">
+	</div>
+	<div class="panel-body">
+		<label form="title">Title</label>
+		<input type="text" class="form-control" id="title" name="title">
+	</div>
+	<div class="panel-body">
+		<label form="title">Price</label>
+		<input type="text" class="form-control" id="price" name="price">
+	</div>
+	<button type="submit" class="btn btn-primary">UPDATE</button>
+	</form>
+</section>
+<section class="delete">
+	<h3>Delete Article</h3>
+	<form action="/delete" method="post">
+		<div class="panel-body">
+			<label form="id">ID</label>
+			<input type="text" class="form-control" id="id" name="id">
+		</div>
+		<button type="submit" class="btn btn-primary">DELETE</button>
+</section>
+<%include footer%>
